@@ -15,7 +15,7 @@ public class ProductLoader implements ApplicationListener<ContextRefreshedEvent>
 
     private ProductRepository productRepository;
 
-    private Logger log = Logger.getLogger(ProductLoader.class);
+    private final Logger log = Logger.getLogger(ProductLoader.class);
 
     @Autowired
     public void setProductRepository(ProductRepository productRepository) {
